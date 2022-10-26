@@ -1,0 +1,570 @@
+
+/* header */
+
+header{
+    height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+h1{
+    text-align: center;
+    line-height: 50px;
+}
+
+h1 img{
+    height: 30px;
+}
+
+.btnNav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.btnNav span{
+    display: block;
+    width: 24px;
+    height: 3px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    background-color: #000;
+}
+
+.btnNav span:last-child{
+    margin-bottom: 0;
+}
+
+/* nav */
+
+nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #f4f4f4;
+    z-index: 999;
+}
+
+.btnClose{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btnClose span{
+    display: block;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s1, .s3{
+    width: 12px;
+    height: 3px;
+    position: absolute;
+    right: 10px;
+}
+
+.s1{
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.s3{
+    top: 27px;
+    transform: rotate(-45deg);
+}
+
+.s2{
+    width: 24px;
+    height: 3px;
+    position: absolute;
+    top: 23.5px;
+    left: 13px;
+}
+
+.gnb{
+    margin-top: 80px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.gnb>li{
+    margin-bottom: 20px;
+}
+
+.gnb>li>a{
+    font-size: 24px;
+    font-family: 'vogue';
+    border-bottom: 1px solid #000;
+}
+
+.sub{
+    font-family: 'pretendard';
+    margin-top: 12px;
+    color: #333;
+    display: none;
+}
+
+.gnb li:nth-child(1) .sub{
+    display: block;
+}
+
+.sub li{
+    margin-top: 10px;
+}
+
+.subBack{
+    display: none;
+}
+
+
+/* banner */
+
+.bnPic .pc{
+    display: none;
+}
+
+.bn{
+    margin-top: 24px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.bnCon{
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
+
+.bnPic img{
+    width: 100%;
+}
+
+
+/* slick button */
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.slick-dots li{
+    height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.slick-dots button{
+    width: 16px;
+    height: 5px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-indent: -9999px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.slick-active button{
+    background-color: #fff;
+}
+
+
+/* artists */
+
+.artists{
+    margin-top: 24px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    font-family: 'vogue';
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-top: 24px;
+    letter-spacing: 1px;
+}
+
+.artWrap{
+    width: calc(100% - 20px);
+    margin-top: 24px;
+    overflow-x: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.artCon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.artWrap::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.artPic{
+    min-width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.artPic:nth-child(1){
+    margin-left: 0;
+}
+
+.artPic img{
+    width: 50px;
+    display: block;
+}
+
+.arrow{
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.arrow img{
+    width: 57px;
+}
+
+
+/* new */
+
+.newTxt .pc{
+    display: none;
+}
+
+.new{
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 72px;
+}
+
+.newCon{
+    border: 1px solid #000;
+}
+
+.newBox{
+    display: none;
+    justify-content: space-between;
+    margin: 24px 10px;
+}
+
+.newBox:nth-child(1){
+    display: flex;
+}
+
+.newPic{
+    border: 1px solid #000;
+    width: 50%;
+    padding: 5px;
+}
+
+.newPic img{
+    display: block;
+    width: 100%;
+}
+
+.newM{
+    margin-top: 48px;
+}
+
+.newTxt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newTxt p{
+    font-family: 'pretendard';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.date{
+    margin-top: 12px;
+}
+
+
+
+.btnNewr, .btnNewm{
+    margin-top: 12px;
+    display: flex;
+}
+
+
+.btnNewr button,
+.btnNewm button{
+    width: 33.3%;
+    height: 25px;
+    border: 1px solid #000;
+}
+
+.btnNewr button:nth-child(1),
+.btnNewm button:nth-child(1){
+    background-color: #f4f4f4;
+}
+
+.btnNewr button:nth-child(2),
+.btnNewm button:nth-child(2){
+    border-left: 0;
+    border-right: 0;
+}
+
+
+
+
+/* multi */
+
+.multi{
+    margin-top: 72px;
+    border: 1px solid #000;
+    text-align: center;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multi h3,
+.square h3{
+    margin-top: 48px;
+}
+
+.multiCon{
+    margin-top: 48px;
+}
+
+.multiPic{
+    width: 266px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+}
+
+.multiPic img{
+    width: 100%;
+    display: block;
+}
+
+.multiTxt{
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-family: 'pretendard';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.multi button,
+.square button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 20px;
+    font-family: 'vogue';
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-bottom: 48px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+/* square */
+
+.square{
+    margin-top: 72px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    background: rgb(204,204,204);
+    background: linear-gradient(0deg, rgba(204,204,204,1) 0%,
+    rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.sqCon{
+    margin-top: 48px;
+}
+
+.sqBox{
+    display: flex;
+    justify-content: center;
+}
+
+.sqPic{
+    width: 92px;
+    border: 4px solid #f4f4f4;
+    border-radius: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+    box-shadow: 2px 2px 2px 
+    rgba(139, 139, 139, 0.4);
+}
+
+.sqPic img{
+    width: 100%;
+    display: block;
+}
+
+.sqBox:nth-child(2){
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+
+/* audition */
+
+.audition .pc{
+    display: none;
+}
+
+.audition{
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audiPic{
+    background-image: url(../image/audition_bn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -85px;
+    height: 90px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.audiPic a{
+    display: block;
+    height: 100%;
+}
+
+/* sns */
+
+.sns{
+    margin-top: 120px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'vogue';
+    font-size: 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.snsCon:nth-child(2){
+    margin-top: 24px;
+}
+
+.snsBox{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.snsPic{
+    filter: grayscale(100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snsPic a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sns1{background-image: url(../image/icon_v.png);}
+.sns2{background-image: url(../image/icon_ins.png);}
+.sns3{background-image: url(../image/icon_yout.png);}
+.sns4{background-image: url(../image/icon_face.png);}
+.sns5{background-image: url(../image/icon_ntv.png);}
+.sns6{background-image: url(../image/icon_npost.png);}
+.sns7{background-image: url(../image/icon_twi.png);}
+.sns8{background-image: url(../image/icon_wei.png);}
+
+/* footer */
+
+footer .pc{
+    display: none;
+}
+
+footer{
+    margin-top: 120px;
+    border-top: 1px solid #333;
+    font-family: 'pretendard';
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+footer h1{
+    border-top: 1px solid #333;
+    margin-top: 2px;
+    padding-top: 72px;
+}
+
+footer h1 img{
+    height: 34px;
+}
+
+footer p{
+    margin-top: 24px;
+    font-weight: 400;
+}
+
+.copy{
+    font-weight: 600;
+}
+
+footer h3{
+    margin-top: 48px;
+    margin-bottom: 120px;
+}
+
+
